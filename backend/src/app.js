@@ -8,6 +8,7 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: "https://resumegenie-pdq3.onrender.com",
+    // origin: "https://localhost:5173",
     credentials: true,
   }),
 );
