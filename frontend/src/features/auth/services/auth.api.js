@@ -1,63 +1,51 @@
-import axios from "axios"
-import { cloneElement } from "react"
-import server from "../../../environment"
+import axios from "axios";
+import { cloneElement } from "react";
+import server from "../../../environment";
 //create an  reusable Axios instance
 const api = axios.create({
-    baseURL: server,
-    withCredentials: true
-})
+  baseURL: server,
+  withCredentials: true,
+});
 
 export async function register({ username, email, password }) {
-
-    try {
-        const response = await api.post('http://localhost:3000/api/auth/register', {
-            username, email, password
-        })
-
-        return response.data
-
-    } catch (err) {
-
-        console.log(err)
-
-    }
+  try {
+    const response = await api.post("/api/auth/register", {
+      username,
+      email,
+      password,
+    });
+    return response.data;
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-export async function login({email , password}){
-    try{
-        const response = await api.post("http://localhost:3000/api/auth/login",{
-            email , password
-    })
-
-        return response.data;
-
-    }catch(err){
-        console.log(err);
-    }
+export async function login({ email, password }) {
+  try {
+    const response = await api.post("/api/auth/login", {
+      email,
+      password,
+    });
+    return response.data;
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-export async function logout(){
-    try{
-
-        const response = await api.get("http://localhost:3000/api/auth/logout")
-
-        return response.data;
-
-    }catch(err){
-        console.log(err);
-    }
+export async function logout() {
+  try {
+    const response = await api.get("/api/auth/logout");
+    return response.data;
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 export async function getMe() {
-
-    try {
-
-        const response = await api.get("http://localhost:3000/api/auth/get-me")
-
-        return response.data
-
-    } catch (err) {
-        console.log(err)
-    }
-
+  try {
+    const response = await api.get("/api/auth/get-me");
+    return response.data;
+  } catch (err) {
+    console.log(err);
+  }
 }
