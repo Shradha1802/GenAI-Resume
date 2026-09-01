@@ -2,7 +2,7 @@
 
 **ResumeGenie** is a full-stack GenAI-powered job preparation platform that helps job seekers optimize their resumes, understand job requirements, close skill gaps, and prepare for interviews — all powered by Google's Gemini AI.
 
-🔗 **Live Demo:** [ResumeGenie-frontend-kakb.onrender.com](https://ResumeGenie-frontend-kakb.onrender.com)
+🔗 **Live Demo:** [resumegenie-pdq3.onrender.com](https://resumegenie-pdq3.onrender.com)
 
 ---
 
@@ -129,5 +129,5 @@ Copyright (c) 2026 Shradha Choudhary
 
 ## 👤 Author
 
-**Ayush**
+**Shradha**
 GitHub: [@Shradha1802](https://github.com/Shradha1802)
